@@ -5,9 +5,10 @@ import { Icon } from './Icons'
 export function Hero() {
   return <section className="hero section" id="home"><div className="shell hero-grid"><div className="hero-copy">
     <div className="eyebrow"><span className="status-dot"/> {profile.tagline}</div>
-    <h1>Building My Future in <span>Artificial Intelligence.</span></h1>
-    <p className="hero-intro">Hi, I'm {profile.name}, a first-year Data Science student at Hanoi University of Science and Technology. I'm passionate about AI, machine learning, and building technology that solves real-world problems.</p>
-    <div className="hero-actions"><a className="button button-primary" href="#projects">Explore my projects <Icon name="arrow" /></a><a className="button button-quiet" href="#about">About me</a></div>
+    <h1>{profile.name}</h1>
+    <p className="hero-role">Building my future in <span>Artificial Intelligence.</span></p>
+    <p className="hero-intro">I'm a first-year Data Science student at Hanoi University of Science and Technology. I'm passionate about AI, machine learning, and building technology that solves real-world problems.</p>
+    <div className="hero-actions"><a className="button button-primary" href="#projects">Explore my projects <Icon name="arrow" /></a><a className="button button-quiet" href="#contact">Let's connect</a></div>
     <div className="hero-socials"><a href={profile.github || '#contact'} aria-disabled={!profile.github} onClick={!profile.github ? (event) => event.preventDefault() : undefined}><Icon name="github"/> GitHub</a><span className="social-divider"/><a href={profile.linkedin || '#contact'} aria-disabled={!profile.linkedin} onClick={!profile.linkedin ? (event) => event.preventDefault() : undefined}><Icon name="linkedin"/> LinkedIn</a><span className="hero-location"><Icon name="location"/> {profile.location}</span></div>
   </div><HeroArtwork/></div><a className="scroll-cue" href="#about"><span/> Scroll to explore</a></section>
 }
