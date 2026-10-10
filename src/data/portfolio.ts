@@ -8,6 +8,7 @@ export const profile = {
   email: 'nguyenquocmanh12012008@gmail.com',
   phone: '0385415417',
   github: 'https://github.com/nguyenquocmanh12012008-tech',
+  facebook: 'https://www.facebook.com/nqmanh120108',
   linkedin: '',
   tagline: 'Data Science Student  ·  AI Enthusiast',
   about:
